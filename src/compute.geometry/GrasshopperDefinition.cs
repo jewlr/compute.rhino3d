@@ -735,6 +735,12 @@ namespace compute.geometry
                                     resthopperObjectList.Add(GetResthopperObject<Mesh>(rhValue));
                                 }
                                 break;
+                            case GH_Material ghValue:
+                                {
+                                    Rhino.Display.DisplayMaterial rhValue = ghValue.Value;
+                                    resthopperObjectList.Add(GetResthopperObject<Rhino.Display.DisplayMaterial>(rhValue));
+                                }
+                                break;
                         }
                     }
 
